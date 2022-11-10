@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hostel_details"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/purple_700">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/back">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/h1"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_below="@+id/image"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Boys Hostel H-11"
+            android:layout_centerHorizontal="true">
+
+        </TextView>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_below="@+id/name"
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location: H-11, Islamabad"
+                android:layout_centerHorizontal="true">
+
+            </TextView>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_below="@+id/location"
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price range: Rs. 16,000 - 20,000"
+                android:layout_centerHorizontal="true">
+
+            </TextView>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_below="@+id/price"
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: 2, 4, 5 seater rooms available."
+                android:layout_centerHorizontal="true">
+
+            </TextView>
+
+            <TextView
+                android:layout_margin="30dp"
+                android:layout_below="@+id/desc"
+                android:id="@+id/fac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facilities: Geyser, Free Wifi, additional chargers for heater and A/C."
+
+                android:layout_centerHorizontal="true">
+
+            </TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enroll"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="150dp"
+                >
+
+            </Button>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
