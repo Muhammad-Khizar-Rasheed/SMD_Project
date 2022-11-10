@@ -122,7 +122,9 @@
                             android:layout_centerHorizontal="true"
                             android:layout_margin="70dp"
 
-                            android:text="Reviews:"></TextView>
+                            android:text="Reviews:">
+
+                        </TextView>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -134,17 +136,23 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/star"></ImageView>
+                                android:src="@drawable/star">
+
+                            </ImageView>
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/starthalf"></ImageView>
+                                android:src="@drawable/starthalf">
+
+                            </ImageView>
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/staroutline"></ImageView>
+                                android:src="@drawable/staroutline">
+
+                            </ImageView>
 
                         </LinearLayout>
 
@@ -158,7 +166,9 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="10dp"
                             android:layout_marginBottom="10dp"
-                            android:text="View Details"></Button>
+                            android:text="View Details">
+
+                        </Button>
 
                     </RelativeLayout>
 
@@ -284,6 +294,7 @@
                 </TextView>
 
                 <ImageView
+                    android:id="@+id/logout"
                     android:layout_width="300dp"
                     android:layout_height="200dp"
                     android:layout_alignParentLeft="true"

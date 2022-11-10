@@ -9,9 +9,10 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Homepage extends AppCompatActivity {
-    ImageView profile;
+    ImageView profile,logout,search;
     DrawerLayout drwr;
     Button details;
     @Override
@@ -21,6 +22,23 @@ public class Homepage extends AppCompatActivity {
         profile=findViewById(R.id.profile);
         drwr=findViewById(R.id.drwr);
         details=findViewById(R.id.details);
+        logout=findViewById(R.id.logout);
+        search=findViewById(R.id.search);
+
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //startActivity(Homepage.this,search_class_name_here.class); //please write the class name
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Homepage.this,"Logging out",Toast.LENGTH_LONG).show();
+                //startActivity(Homepage.this,signin_class_name_here.class); //please write the class name
+            }
+        });
 
         details.setOnClickListener(new View.OnClickListener() {
             @Override
